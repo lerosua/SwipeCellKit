@@ -30,13 +30,12 @@
 		B93ECA951EDEE8A700AE05AD /* SwipeCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93ECA941EDEE8A700AE05AD /* SwipeCollectionViewCellDelegate.swift */; };
 		B93ECA991EDEE93D00AE05AD /* SwipeAccessibilityCustomAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93ECA981EDEE93D00AE05AD /* SwipeAccessibilityCustomAction.swift */; };
 		B93ECA9B1EDEEABA00AE05AD /* SwipeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93ECA9A1EDEEABA00AE05AD /* SwipeOptions.swift */; };
-		E91231D3229E238300CE3B2A /* ExpandableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E91231CB229E238300CE3B2A /* ExpandableCell.h */; };
-		E91231D4229E238300CE3B2A /* ExpandableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91231CC229E238300CE3B2A /* ExpandableCell.swift */; };
-		E91231D5229E238300CE3B2A /* ExpandableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91231CD229E238300CE3B2A /* ExpandableDelegate.swift */; };
-		E91231D6229E238300CE3B2A /* ExpandableStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91231CE229E238300CE3B2A /* ExpandableStyle.swift */; };
-		E91231D7229E238300CE3B2A /* ExpandableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91231CF229E238300CE3B2A /* ExpandableTableView.swift */; };
-		E91231D9229E238300CE3B2A /* ExpandableCell.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91231D1229E238300CE3B2A /* ExpandableCell.xcassets */; };
-		E9BD2C17229E28170096299C /* ExpandableProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91231CA229E238300CE3B2A /* ExpandableProcessor.swift */; };
+		E9BD2C21229E5CBF0096299C /* ExpandableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BD2C1B229E5CBF0096299C /* ExpandableCell.h */; };
+		E9BD2C22229E5CBF0096299C /* ExpandableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BD2C1C229E5CBF0096299C /* ExpandableDelegate.swift */; };
+		E9BD2C23229E5CBF0096299C /* ExpandableStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BD2C1D229E5CBF0096299C /* ExpandableStyle.swift */; };
+		E9BD2C24229E5CBF0096299C /* ExpandableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BD2C1E229E5CBF0096299C /* ExpandableCell.swift */; };
+		E9BD2C25229E5CBF0096299C /* ExpandableProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BD2C1F229E5CBF0096299C /* ExpandableProcessor.swift */; };
+		E9BD2C26229E5CBF0096299C /* ExpandableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BD2C20229E5CBF0096299C /* ExpandableTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,13 +64,12 @@
 		B93ECA941EDEE8A700AE05AD /* SwipeCollectionViewCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeCollectionViewCellDelegate.swift; sourceTree = "<group>"; };
 		B93ECA981EDEE93D00AE05AD /* SwipeAccessibilityCustomAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeAccessibilityCustomAction.swift; sourceTree = "<group>"; };
 		B93ECA9A1EDEEABA00AE05AD /* SwipeOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeOptions.swift; sourceTree = "<group>"; };
-		E91231CA229E238300CE3B2A /* ExpandableProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableProcessor.swift; sourceTree = "<group>"; };
-		E91231CB229E238300CE3B2A /* ExpandableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandableCell.h; sourceTree = "<group>"; };
-		E91231CC229E238300CE3B2A /* ExpandableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableCell.swift; sourceTree = "<group>"; };
-		E91231CD229E238300CE3B2A /* ExpandableDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableDelegate.swift; sourceTree = "<group>"; };
-		E91231CE229E238300CE3B2A /* ExpandableStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableStyle.swift; sourceTree = "<group>"; };
-		E91231CF229E238300CE3B2A /* ExpandableTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableTableView.swift; sourceTree = "<group>"; };
-		E91231D1229E238300CE3B2A /* ExpandableCell.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ExpandableCell.xcassets; sourceTree = "<group>"; };
+		E9BD2C1B229E5CBF0096299C /* ExpandableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandableCell.h; sourceTree = "<group>"; };
+		E9BD2C1C229E5CBF0096299C /* ExpandableDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableDelegate.swift; sourceTree = "<group>"; };
+		E9BD2C1D229E5CBF0096299C /* ExpandableStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableStyle.swift; sourceTree = "<group>"; };
+		E9BD2C1E229E5CBF0096299C /* ExpandableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableCell.swift; sourceTree = "<group>"; };
+		E9BD2C1F229E5CBF0096299C /* ExpandableProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableProcessor.swift; sourceTree = "<group>"; };
+		E9BD2C20229E5CBF0096299C /* ExpandableTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +102,12 @@
 		3F234AC51E44A7A400E22A38 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E91231C9229E238300CE3B2A /* ExpandableCell */,
+				E9BD2C1B229E5CBF0096299C /* ExpandableCell.h */,
+				E9BD2C1E229E5CBF0096299C /* ExpandableCell.swift */,
+				E9BD2C1C229E5CBF0096299C /* ExpandableDelegate.swift */,
+				E9BD2C1F229E5CBF0096299C /* ExpandableProcessor.swift */,
+				E9BD2C1D229E5CBF0096299C /* ExpandableStyle.swift */,
+				E9BD2C20229E5CBF0096299C /* ExpandableTableView.swift */,
 				3F4C721E1E7E8C180097399A /* Swipeable.swift */,
 				170BCE711E8340C000F46E18 /* SwipeAnimator.swift */,
 				B93ECA981EDEE93D00AE05AD /* SwipeAccessibilityCustomAction.swift */,
@@ -141,20 +144,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E91231C9229E238300CE3B2A /* ExpandableCell */ = {
-			isa = PBXGroup;
-			children = (
-				E91231CA229E238300CE3B2A /* ExpandableProcessor.swift */,
-				E91231CB229E238300CE3B2A /* ExpandableCell.h */,
-				E91231CC229E238300CE3B2A /* ExpandableCell.swift */,
-				E91231CD229E238300CE3B2A /* ExpandableDelegate.swift */,
-				E91231CE229E238300CE3B2A /* ExpandableStyle.swift */,
-				E91231CF229E238300CE3B2A /* ExpandableTableView.swift */,
-				E91231D1229E238300CE3B2A /* ExpandableCell.xcassets */,
-			);
-			path = ExpandableCell;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -162,7 +151,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E91231D3229E238300CE3B2A /* ExpandableCell.h in Headers */,
+				E9BD2C21229E5CBF0096299C /* ExpandableCell.h in Headers */,
 				3F234AC81E44A7A400E22A38 /* SwipeCellKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,7 +215,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E91231D9229E238300CE3B2A /* ExpandableCell.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,9 +227,7 @@
 			files = (
 				3F234AD81E44A94F00E22A38 /* SwipeActionsView.swift in Sources */,
 				3F234AD71E44A94F00E22A38 /* SwipeAction.swift in Sources */,
-				E9BD2C17229E28170096299C /* ExpandableProcessor.swift in Sources */,
 				3F3ED7101E486993009DD5D8 /* SwipeActionButton.swift in Sources */,
-				E91231D6229E238300CE3B2A /* ExpandableStyle.swift in Sources */,
 				B93ECA931EDEE88800AE05AD /* SwipeCollectionViewCell+Display.swift in Sources */,
 				3F234AD61E44A94F00E22A38 /* SwipeTableViewCell.swift in Sources */,
 				3F19AD041E8D711C006B4B3A /* SwipeFeedback.swift in Sources */,
@@ -249,21 +235,23 @@
 				3FD016701E696D8D00B54FFC /* SwipeTransitionLayout.swift in Sources */,
 				3FA78CA11E5A5A0B00A1D8FF /* SwipeTableViewCell+Accessibility.swift in Sources */,
 				B93ECA8F1EDEE80700AE05AD /* SwipeCollectionViewCell.swift in Sources */,
-				E91231D4229E238300CE3B2A /* ExpandableCell.swift in Sources */,
 				3F4C721F1E7E8C180097399A /* Swipeable.swift in Sources */,
 				3F4C721D1E7E8BC20097399A /* SwipeExpansionStyle.swift in Sources */,
 				B93ECA911EDEE87800AE05AD /* SwipeCollectionViewCell+Accessibility.swift in Sources */,
 				3F3ED7121E48AF37009DD5D8 /* SwipeTableViewCellDelegate.swift in Sources */,
+				E9BD2C25229E5CBF0096299C /* ExpandableProcessor.swift in Sources */,
 				3FD016E11E6D7F7700B54FFC /* SwipeActionTransitioning.swift in Sources */,
 				B93ECA9B1EDEEABA00AE05AD /* SwipeOptions.swift in Sources */,
-				E91231D5229E238300CE3B2A /* ExpandableDelegate.swift in Sources */,
-				E91231D7229E238300CE3B2A /* ExpandableTableView.swift in Sources */,
 				11D4999D20B0D65400A1F4E7 /* SwipeController.swift in Sources */,
+				E9BD2C22229E5CBF0096299C /* ExpandableDelegate.swift in Sources */,
 				B93ECA991EDEE93D00AE05AD /* SwipeAccessibilityCustomAction.swift in Sources */,
+				E9BD2C26229E5CBF0096299C /* ExpandableTableView.swift in Sources */,
 				3FD016DF1E6D778700B54FFC /* SwipeExpanding.swift in Sources */,
 				170BCE721E8340C000F46E18 /* SwipeAnimator.swift in Sources */,
+				E9BD2C23229E5CBF0096299C /* ExpandableStyle.swift in Sources */,
 				3F6433DA1EA53AC3008B1D48 /* SwipeTableViewCell+Display.swift in Sources */,
 				3F234AD91E44A94F00E22A38 /* Extensions.swift in Sources */,
+				E9BD2C24229E5CBF0096299C /* ExpandableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
