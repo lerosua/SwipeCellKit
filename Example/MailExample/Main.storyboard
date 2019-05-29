@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LX8-Wu-PZs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LX8-Wu-PZs">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -117,7 +115,7 @@
         <!--View Controller-->
         <scene sceneID="17V-AF-8zo">
             <objects>
-                <viewController id="81m-9H-rJk" sceneMemberID="viewController">
+                <viewController id="81m-9H-rJk" customClass="ViewController" customModule="MailExample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zvn-TP-vhq"/>
                         <viewControllerLayoutGuide type="bottom" id="7lK-sQ-N5i"/>
@@ -125,7 +123,23 @@
                     <view key="view" contentMode="scaleToFill" id="Wnv-we-QW8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FL7-qQ-IHA" customClass="ExpandableTableView" customModule="SwipeCellKit">
+                                <rect key="frame" x="20" y="64" width="374" height="628"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="81m-9H-rJk" id="aY7-ZY-FyS"/>
+                                    <outlet property="delegate" destination="81m-9H-rJk" id="qlN-ft-E7e"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="FL7-qQ-IHA" secondAttribute="trailing" id="83S-CK-Pap"/>
+                            <constraint firstItem="FL7-qQ-IHA" firstAttribute="top" secondItem="Zvn-TP-vhq" secondAttribute="bottom" id="X1h-oE-MIl"/>
+                            <constraint firstItem="7lK-sQ-N5i" firstAttribute="top" secondItem="FL7-qQ-IHA" secondAttribute="bottom" id="iFs-Bf-cyO"/>
+                            <constraint firstItem="FL7-qQ-IHA" firstAttribute="leading" secondItem="Wnv-we-QW8" secondAttribute="leadingMargin" id="nTO-4v-FIp"/>
+                        </constraints>
                     </view>
                     <toolbarItems>
                         <barButtonItem systemItem="organize" id="anf-f8-yx4"/>
@@ -137,6 +151,9 @@
                         <barButtonItem systemItem="compose" id="WlO-zb-3kD"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="EIm-x7-h3d"/>
+                    <connections>
+                        <outlet property="tableView" destination="FL7-qQ-IHA" id="p6j-iD-iMs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pAA-dO-BBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -252,25 +269,25 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ysl-94-klK">
-                                            <rect key="frame" x="32" y="8" width="366" height="80.333333333333329"/>
+                                            <rect key="frame" x="32" y="28" width="366" height="70"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="5uQ-2a-OAe">
-                                                    <rect key="frame" x="0.0" y="0.0" width="366" height="20.333333333333332"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="366" height="14"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfg-MB-yOh">
-                                                            <rect key="frame" x="0.0" y="0.0" width="75.666666666666671" height="20.333333333333332"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="75.666666666666671" height="14"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:16 AM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krw-3d-vsj">
-                                                            <rect key="frame" x="81.666666666666657" y="0.33333333333333393" width="264.33333333333337" height="19.666666666666664"/>
+                                                            <rect key="frame" x="81.666666666666657" y="0.33333333333333215" width="264.33333333333337" height="13.333333333333334"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                             <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Disclosure" translatesAutoresizingMaskIntoConstraints="NO" id="wgb-e1-RIb">
-                                                            <rect key="frame" x="352" y="3.3333333333333339" width="14" height="14.000000000000002"/>
+                                                            <rect key="frame" x="352" y="0.0" width="14" height="14"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="14" id="9aU-Eh-pJm"/>
                                                                 <constraint firstAttribute="width" constant="14" id="ROJ-mF-KxD"/>
@@ -281,14 +298,14 @@
                                                         <constraint firstItem="krw-3d-vsj" firstAttribute="baseline" secondItem="sfg-MB-yOh" secondAttribute="baseline" id="OOb-Gv-BdC"/>
                                                     </constraints>
                                                 </stackView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Fwd: Jane's independent studies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gm-mS-pbN">
-                                                    <rect key="frame" x="0.0" y="22.333333333333332" width="224.33333333333334" height="17.999999999999996"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" ambiguous="YES" text="Fwd: Jane's independent studies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gm-mS-pbN">
+                                                    <rect key="frame" x="0.0" y="16" width="224.33333333333334" height="18"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNK-Lz-z8w">
-                                                    <rect key="frame" x="0.0" y="42.333333333333336" width="360" height="38.000000000000007"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNK-Lz-z8w">
+                                                    <rect key="frame" x="0.0" y="36" width="360" height="34"/>
                                                     <string key="text">Sra. Mendez - Thank you so MUCH for this.  We know you do not have to do this and we are so grateful to you.  Please let us know if there's anything else we can do.</string>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
