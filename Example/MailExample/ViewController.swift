@@ -102,11 +102,7 @@ class ViewController: UIViewController {
 
 extension ViewController: ExpandableDelegate {
     
-    func handleSwipeCell(_ cell:UITableViewCell,cellForRowAt indexPath: IndexPath ){
-        if let swipeCell = cell as? SwipeTableViewCell{
-            swipeCell.delegate = self
-        }
-    }
+ 
     func expandableTableView(_ expandableTableView: ExpandableTableView, expandedCellsForRowAt indexPath: IndexPath) -> [UITableViewCell]? {
         switch indexPath.section {
         case 0:
@@ -219,6 +215,10 @@ extension ViewController: ExpandableDelegate {
     
     func expandableTableView(_ expandableTableView: ExpandableTableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = expandableTableView.dequeueReusableCell(withIdentifier: parentCells[indexPath.section][indexPath.row]) else { return UITableViewCell() }
+    if let swipeCell = cell as? SwipeTableViewCell{
+        swipeCell.delegate = self
+    }
+
         return cell
     }
     

@@ -148,11 +148,9 @@ extension ExpandableTableView: UITableViewDataSource, UITableViewDelegate {
         let originalIndexPath = expandableProcessor.original(indexPath: indexPath)
 
         if let cell = expandableProcessor.expandedCell(at: indexPath) {
-            delegate.handleSwipeCell(cell, cellForRowAt: indexPath)
             return cell
         } else {
             let cell = delegate.expandableTableView(self, cellForRowAt: originalIndexPath)
-            delegate.handleSwipeCell(cell, cellForRowAt: indexPath)
             return cell
         }
     }

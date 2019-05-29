@@ -12,9 +12,6 @@ public protocol ExpandableDelegate: UIScrollViewDelegate {
 
     // MARK: Required Methods
     func expandableTableView(_ expandableTableView: ExpandableTableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
-
-    func handleSwipeCell(_ cell: UITableViewCell, cellForRowAt indexPath: IndexPath)
-
     
     func expandableTableView(_ expandableTableView: ExpandableTableView, numberOfRowsInSection section: Int) -> Int
 
